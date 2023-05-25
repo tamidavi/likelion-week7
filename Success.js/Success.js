@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Image from "./likelion_w_logo.png";
+import Image from "./success.png";
 
-const HomeContainer = styled.div`
+const SuccessContainer = styled.div`
   text-align: center;
   padding: 20px;
   background-color: #ffeecc;
@@ -14,21 +13,21 @@ const HomeContainer = styled.div`
   align-items: center;
 `;
 
-const HomeTitle = styled.h1`
+const SuccessTitle = styled.h1`
   font-size: 84px;
   color: #ff5e00;
   margin-bottom: 10px;
   font-family: '맑은 고딕', sans-serif;
 `;
 
-const HomeMessage = styled.p`
+const SuccessMessage = styled.p`
   font-size: 42px;
   color: #ff5e00;
   margin-bottom: 5px;
   font-family: '맑은 고딕', sans-serif;
 `;
 
-const HomeImage = styled.img`
+const SuccessImage = styled.img`
   width: 500px;
   height: auto;
   margin-bottom: 20px;
@@ -36,17 +35,15 @@ const HomeImage = styled.img`
   border-radius: 10px;
 `;
 
-
-const Home = () => {
+const Success = () => {
   return (
-      <HomeContainer>
-      <HomeTitle>Success!</HomeTitle>
-      <HomeMessage>성공하셨습니다. 축하합니다!!</HomeMessage>
-      <HomeMessage>완료한 프로젝트는 자신의 GitHub에 올려주세요!</HomeMessage>
-      {<HomeImage src={Image} alt="Success" />}
-    </HomeContainer>
-
+    <SuccessContainer>
+      <SuccessTitle>Success!</SuccessTitle>
+      <SuccessMessage>성공하셨습니다. 축하합니다!!</SuccessMessage>
+      <SuccessMessage>완료한 프로젝트는 자신의 GitHub에 올려주세요!</SuccessMessage>
+      {/* <SuccessImage src={Image} alt="Success" /> */}
+    </SuccessContainer>
   );
 };
 
-export default Home;
+export default Success;
