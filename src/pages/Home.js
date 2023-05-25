@@ -18,14 +18,14 @@ const HomeTitle = styled.h1`
   font-size: 84px;
   color: #ff5e00;
   margin-bottom: 10px;
-  font-family: '맑은 고딕', sans-serif;
+  font-family: "맑은 고딕", sans-serif;
 `;
 
 const HomeMessage = styled.p`
   font-size: 42px;
   color: #ff5e00;
   margin-bottom: 5px;
-  font-family: '맑은 고딕', sans-serif;
+  font-family: "맑은 고딕", sans-serif;
 `;
 
 const HomeImage = styled.img`
@@ -36,16 +36,15 @@ const HomeImage = styled.img`
   border-radius: 10px;
 `;
 
-
 const Home = () => {
   return (
-      <HomeContainer>
+    <HomeContainer>
       <HomeTitle>Success!</HomeTitle>
       <HomeMessage>성공하셨습니다. 축하합니다!!</HomeMessage>
       <HomeMessage>완료한 프로젝트는 자신의 GitHub에 올려주세요!</HomeMessage>
       {<HomeImage src={Image} alt="Success" />}
+      <Link to="/About">About</Link>
     </HomeContainer>
-
   );
 };
 
